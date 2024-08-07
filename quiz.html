@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="quiz.css">
+    </head>
+    <body  style="object-fit: none;">
+                <nav>
+                    <a href="index.html"style="text-decoration:none;font-size: 3em;
+  padding: 2px 2px 2px 2px;display: inline-block;border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;color:;
+    border-left: 40px solid rgb(18, 32, 4);" ><span >HOME</span>←</a>
+    
+                </nav>
+                
+            <div class="container">
+                <div id="game" class="justify-center flex-column">
+                    <div id="hud">
+                        <div class="hud-item">
+                            <p id="progressText" class="hud-prefix">   
+                                Question
+                            </p>
+                            <div id="progressBar">
+                                <div id="progressBarfull"></div>
+                            </div>
+                        </div>
+                        <div class="hud-item">
+                            <p class="hud-prefix">
+                                Score
+                            </p>
+                            <h1 class="hud-main-text" id="score">0</h1>
+                        </div>
+                    </div>
+                
+                   <h1 id="question">In the United States, how much less tree cover do neighborhoods with a majority of people of color have, compared to neighborhoods with a majority of white people?</h1>
+                   <div class="choice-container">
+                        <p class="choice-prefix">A</p>
+                        <p class="choice-text" data-number="1">choice 1</p>
+                   </div>
+                   <div class="choice-container">
+                        <p class="choice-prefix">B</p>
+                        <p class="choice-text" data-number="2">choice 2</p>
+                   </div>
+                   <div class="choice-container">
+                        <p class="choice-prefix">C</p>
+                        <p class="choice-text" data-number="3">choice 3</p>
+                   </div>
+                   <div class="choice-container">
+                        <p class="choice-prefix">D</p>
+                        <p class="choice-text" data-number="4">choice 4</p>
+                   </div>
+            </div>
+        </div>
+        <script src="quiz.js"></script>
+    </body>
+</html>

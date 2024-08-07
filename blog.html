@@ -1,0 +1,408 @@
+<html>
+    <head>
+        <style>
+            *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.blog-box-container{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1050px;
+    width: 90%;
+    margin-top:50px;
+    padding-left:10%;    
+}
+.blog-box{
+    max-width:350px;
+    width:100%;
+    height:100%;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    transition: all ease 0.3s; 
+    padding-right: 10%;
+}
+.blog-box:hover{
+    background-color:rgb(192, 192, 192);
+    box-shadow: 16px 20px 50px rgba(0,0,0,0.12);
+}
+.blog-box-img{
+    width:100%;
+    height:100%;
+    max-height:300px;
+    overflow:hidden;
+    display:flex;
+    position: relative;
+}
+.blog-box-img img{
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+    object-position:center;
+    transition: all ease 0.3s;
+}
+.blog-img-link{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 30px rgba(20,97,212,0.12);
+    animation: fade 0.3s;
+}
+.blog-box:hover .blog-box-img a{
+    display:flex;
+}
+.blog-box:hover .blog-box-img img{
+    width: 105%;
+    height: 105%;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.blog-box-text{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px 20px 10px;
+}
+.blog-box-text p{
+    color: hsl(0, 14%, 10%);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.blog-box-text a{
+    font-size: 1.4rem;
+    color: hsla(0, 91%, 14%, 0.934);
+    font-weight: 800;
+    line-height: 1.8rem;
+    margin: 5px 0px 10px 0px;
+}
+.blog-box-text p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /* -webkit-line-clamp: 3; */
+    -webkit-box-orient: vertical;
+
+}
+.blog-author-text{
+    color: green;
+    font-style:italic;
+}
+body{
+    background-color:rgb(239, 232, 232);
+}
+.container{
+    width: 100%;
+    height:40vh;
+    background-image: url("deers image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+</style>
+    </head>
+    <body>
+        <!-- <img src="" width="100%" height="50%"> -->
+         <div class="container">
+            <!-- <img src="forest.jpg" alt="forest"> -->
+         </div>
+        <section id="blog">
+           <div class="blog-box-container" >
+            <!--box1-->
+            <div class="blog-box">
+
+                <div class="blog-box-img">
+                    <a href="\box1.html"><img src="image2.png" alt="blog image"></a>
+                    <a href="#" class="blog-img-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="blog-box-text">
+                    <div class="blog-author">
+                        <div class="blog-author-text">
+                            <span><b>July 11, 2024 |</b></span>
+                            <strong>Forest Commission |</strong>
+                        </div>
+                    </div>
+                    <a href="\box1.html">The Wider Benefits of Continuous Forestry</a>
+                    <p>The active management of woodlands is widely recognised as being important for the health, well-being and sustainability of our woodlands. Among the most attractive options is an approach called Continuous Cover Forestry (CCF).</p>
+                </div>
+            </div>
+
+            <!--box3-->
+            <div class="blog-box">
+
+                <div class="blog-box-img">
+                    <a href="box3.html"><img src="image4.png" alt="blog image"></a>
+                    <a href="#" class="blog-img-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="blog-box-text">
+                    <div class="blog-author">
+                        <div class="blog-author-text">
+                            <span><b>July 8, 2024 |</b></span>
+                            <strong>Håkan Ekström |</strong>
+                        </div>
+                    </div>
+                    <a href="\box3.html">A Comprehensive Look at Global Wood Fiber Markets</a>
+                    <p>The past couple of years have seen a tremendous surge in the global pulp market, with prices hovering around record highs in major regions such as North America and Europe. The reasons behind these inflated prices are primarily reduced timber harvests and a decrease in sawmill residues, resulting in a tightened wood fiber supply.</p>
+                </div>
+            </div>
+
+            <!--box4-->
+            <div class="blog-box">
+
+                <div class="blog-box-img">
+                    <a href="\box4.html"><img src="image5.png" alt="blog image"></a>
+                    <a href="#" class="blog-img-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="blog-box-text">
+                    <div class="blog-author">
+                        <div class="blog-author-text">
+                            <span><b>June 27, 2024 |</b></span>
+                            <strong>James MacCarthy | Alexandra Tyukavina | Mikaela Weisse | Nancy Harris  |</strong>
+                        </div>
+                    </div>
+                    <a href="\box4.html">Canada's Record-breaking 2023 Wildfires Released Nearly 4 Times More Carbon than Global Aviation</a>
+                    <p>Researchers from WRI’s Global Forest Watch initiative and the University of Maryland find that wildfires burned roughly 7.8 million hectares of forests in Canada in 2023 — more than 6 times the annual average since 2001. This amount of tree cover loss produced roughly 3 billion tons of carbon dioxide — nearly 4 times the carbon emissions of the global aviation sector in 2022, and 25% more than from all tropical primary forest loss combined in 2023.</p>
+                </div>
+            </div>
+
+            <!--box12-->
+            <div class="blog-box">
+
+                <div class="blog-box-img">
+                    <a href="\box12.html"><img src="image13.png" alt="blog image"></a>
+                    <a href="#" class="blog-img-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="blog-box-text">
+                    <div class="blog-author">
+                        <div class="blog-author-text">
+                            <span><b>May 11, 2024 |</b></span>
+                            <strong>Matt Smith |</strong>
+                        </div>
+                    </div>
+                    <a href="\box12.html">Responding to ash dieback: assessing your risk and what you can do</a>
+                    <p>Ash dieback (Hymenoscyphus fraxineus) is a serious fungal disease affecting ash trees. It was officially detected in the UK in 2012 and is now widespread. The fungus causes gradual crown dieback and can also attack the root collar of susceptible trees. A susceptible ash tree may take many or only a few years to eventually die depending on site conditions, as well as size and genetic make-up of the tree.</p>
+                </div>
+            </div>       
+            
+            <!--box5-->
+            <div class="blog-box">
+
+                <div class="blog-box-img">
+                    <a href="\box5.html"><img src="image6.png" alt="blog image"></a>
+                    <a href="#" class="blog-img-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="blog-box-text">
+                    <div class="blog-author">
+                        <div class="blog-author-text">
+                            <span><b>April 4, 2024 |</b></span>
+                            <strong>Liz Goldman | Sarah Carter |</strong>
+                        </div>
+                    </div>
+                    <a href="\box5.html">Global Forest Watch’s 2023 Tree Cover Loss Data Explained</a>
+                    <p>New tree cover loss data from the University of Maryland’s GLAD lab (UMD) and available on Global Forest Watch (GFW) shows declines in primary forest loss in some countries but a persistent rate overall in 2023. What does the data measure, what is different this year and how does it compare to other official estimates of deforestation? Here is what you should know about the new data.</p>
+                </div>
+            </div>
+
+             <!--box8-->
+
+             <div class="blog-box">
+
+                <div class="blog-box-img">
+                    <a href="\box8.html"><img src="image9.png" alt="blog image"></a>
+                    <a href="#" class="blog-img-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="blog-box-text">
+                    <div class="blog-author">
+                        <div class="blog-author-text">
+                            <span><b>March 26, 2024 |</b></span>
+                            <strong>Ewan Calcott |</strong>
+                        </div>
+                    </div>
+                    <a href="\box8.html">Fast-tracking woodland creation in low sensitivity areas</a>
+                    <p>Our Principal Advisor for woodland regulations looks at what version 4 of the England Woodland Creation Low Sensitivity Map, and starting to fast-track woodland creation applications in low sensitivity areas, means for tree planting. </p>
+                </div>
+            </div>
+
+             <!--box10-->
+             <div class="blog-box">
+
+                <div class="blog-box-img">
+                    <a href="\box10.html"><img src="image11.png" alt="blog image"></a>
+                    <a href="#" class="blog-img-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="blog-box-text">
+                    <div class="blog-author">
+                        <div class="blog-author-text">
+                            <span><b>February 26, 2024 |</b></span>
+                            <strong>Forest Commission |</strong>
+                        </div>
+                    </div>
+                    <a href="\box10.html">The first phase of the Forestry Commission’s new approach to consultation is live</a>
+                    <p>Back in September 2023 we announced our new approach to how we consult or seek advice and information on forestry proposals. This published statement set out how the Forestry Commission, on behalf of the Forestry Commissioners, will undertake consultation when assessing applications for woodland creation, tree felling and management.  </p>
+                </div>
+            </div>
+
+<!--box6-->
+
+<div class="blog-box">
+
+    <div class="blog-box-img">
+        <a href="\box6.html"><img src="image7.png" alt="blog image"></a>
+        <a href="#" class="blog-img-link">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+    </div>
+
+    <div class="blog-box-text">
+        <div class="blog-author">
+            <div class="blog-author-text">
+                <span><b>February 14, 2024 |</b></span>
+                <strong>Martina Schneider |</strong>
+             </div>
+        </div>
+        <a href="\box6.html">Ending Deforestation from Cocoa in West Africa with New Data-Driven Resources</a>
+        <p>The global demand for chocolate has had a significant impact on West African forests. Approximately 70% of the global supply of cocoa originates from Ghana and Côte d’Ivoire, where production sites have replaced millions of hectares of forest. Between 2001 and 2015 alone, cocoa was linked to the loss of a third of Ghana’s forest area and a quarter of Côte d’Ivoire’s.</p>
+    </div>
+</div>
+
+<!--box7-->
+<div class="blog-box">
+
+    <div class="blog-box-img">
+        <a href="\box7.html"><img src="image8.png" alt="blog image"></a>
+        <a href="#" class="blog-img-link">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+    </div>
+
+    <div class="blog-box-text">
+        <div class="blog-author">
+            <div class="blog-author-text">
+                <span><b>January 8, 2024 |</b></span>
+                <strong>Michelle Sims |</strong>
+            </div>
+        </div>
+        <a href="\box7.html">Differences Between Global Forest Watch’s Tree Cover Loss Data and JRC’s Tropical Moist Forest Data Explained</a>
+        <p>The wide availability of forest and land cover maps based on satellite data provides more information on the world’s forests than ever before. However, this plethora of information can also be challenging for people trying to understand differences in data sources and decide which data to use for a specific purpose.</p>
+    </div>
+</div>
+             <!--box11-->
+             <div class="blog-box">
+
+                <div class="blog-box-img">
+                    <a href="\box11.html"><img src="image12.png" alt="blog image"></a>
+                    <a href="#" class="blog-img-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="blog-box-text">
+                    <div class="blog-author">
+                        <div class="blog-author-text">
+                            <span><b>November 13, 2023 |</b></span>
+                            <strong>Ruth Nogueron |</strong>
+                        </div>
+                    </div>
+                    <a href="box11.html">Monitoring Forest Degradation for the EU Deforestation Regulation Using GFW</a>
+                    <p>In May 2023, the European Union (EU) adopted a regulation, the EU Deforestation Regulation (EUDR), that requires companies to show that commodities placed on the EU market are deforestation- or degradation-free.  </p>
+                </div>
+            </div>
+            
+
+            <!--box2-->
+
+            <div class="blog-box">
+
+                <div class="blog-box-img">
+                    <a href="\box2.html"><img src="image3.png" alt="blog image"></a>
+                    <a href="#" class="blog-img-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="blog-box-text">
+                    <div class="blog-author">
+                        <div class="blog-author-text">
+                            <span><b>April 28, 2023 |</b></span>
+                            <strong>Forest Commission |</strong>
+                        </div>
+                    </div>
+                    <a href="\box2.html">Empowering Private Landowners with Training</a>
+                    <p>The main objective of the PFP Technical Transfer session is to share knowledge and transfer technical skills to registered planters who are beginners and those with established plots. The planters will also get the opportunity to share their knowledge with each other based on their individual experiences. This approach will allow each planter to practise information shared and  enhance their technical skills to maintain the PFP plots effectively for commercial or conservation purposes.</p>
+                </div>
+            </div>
+     
+
+            <!--box9-->
+            <div class="blog-box">
+
+                <div class="blog-box-img">
+                    <a href="\box9.html"><img src="image10.png" alt="blog image"></a>
+                    <a href="#" class="blog-img-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="blog-box-text">
+                    <div class="blog-author">
+                        <div class="blog-author-text">
+                            <span><b>September 13, 2022 |</b></span>
+                            <strong>Forest Commission |</strong>
+                        </div>
+                    </div>
+                    <a href="\box9.html">Basics of Pruning Trees</a>
+                    <p>The trees in our backyards and along our streets don’t have quite as much freedom–and for good reason. Of course, we want our trees to look natural while also ensuring they grow strong and don’t become a safety risk.</p>
+                </div>
+            </div>              
+           </div>
+        </section>
+    </body>
+</html>
+

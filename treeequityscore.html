@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tree equity score</title>
+        <link rel="STYLESHEET" href="treeequityscore.css">
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        
+        <div class="wrapper">
+            <form action="" id="form">
+                <h1>EQUITY SCORE</h1>
+                <div class="input-box">
+                    <input id="userinput" type="text" placeholder="Enter State name" style="text-align: center;font-size:22px">
+                    <i class='bx bx-current-location'></i>  
+                </div>
+                <h1 id="output"></h1>
+                <!-- <button type="submit" class="btn" onclick="myfun1()">Check the equity score</button> -->
+                <button class="btn" >Check the equity score</button>
+                
+                <p>EVERY TREE COUNTS</p>
+                <p>Be part of the solution</p>
+                <p style="text-align: center;"><a href="https://www.treeequityscore.org/methodology">Know more</a></p>
+                
+             </form>
+        </div>
+        <script>
+
+            let form = document.querySelector('#form');console.log(form);
+            form.addEventListener('click',(eve) => {
+                let input=document.getElementById("userinput").value;
+                if(input==="lakshadweep"){
+                    document.getElementById("output").textContent="Score 92";
+                }else if(input==="delhi"){
+                    document.getElementById("output").textContent="Score 13";
+                }else if(input==='arunachal'){
+                    document.getElementById("output").textContent="Score 79";
+                }else if(input==='mizoram'){
+                    document.getElementById("output").textContent="Score 84";
+                }else if(input==='andaman and nicobar'){
+                    document.getElementById("output").textContent="Score 82";
+                }else if(input==='meghalaya'){
+                    document.getElementById("output").textContent="Score 76";
+                }else if(input==='assam'){
+                    document.getElementById("output").textContent="Score 36";
+                }else if(input==='manipur'){
+                    document.getElementById("output").textContent="Score 74";
+                }else if(input==='nagaland'){
+                    document.getElementById("output").textContent="Score 73.9";
+                }else if(input==='tripura'){
+                    document.getElementById("output").textContent="Score 73.6";
+                }else if(input==='goa'){
+                    document.getElementById("output").textContent="Score 60";
+                }else if(input==='kerala'){
+                    document.getElementById("output").textContent="Score 55";
+                }else if(input==='sikkim'){
+                    document.getElementById("output").textContent="Score 47";
+                }else if(input==='bihar'){
+                    document.getElementById("output").textContent="Score 8";
+                }else if(input==='chattisgarh'){
+                    document.getElementById("output").textContent="Score 41";
+                }else if(input==='delhi'){
+                    document.getElementById("output").textContent="Score 13";
+                }else if(input==='gujarat'){
+                    document.getElementById("output").textContent="Score 7";
+                }else if(input==='haryana'){
+                    document.getElementById("output").textContent="Score 4";
+                }else if(input==='himachal pradesh'){
+                    document.getElementById("output").textContent="Score 28";
+                }else if(input==='jharkhand'){
+                    document.getElementById("output").textContent="Score 30";
+                }else if(input==='karnataka'){
+                    document.getElementById("output").textContent="Score 20";
+                }else if(input==='madhya pradesh'){
+                    document.getElementById("output").textContent="Score 25";
+                }else if(input==='maharastra'){
+                    document.getElementById("output").textContent="Score 16";
+                }else if(input==='ladakh'){
+                    document.getElementById("output").textContent="Score 2";
+                }else if(input==='punjab'){
+                    document.getElementById("output").textContent="Score 5";
+                }else if(input==='rajasthan'){
+                    document.getElementById("output").textContent="Score 5";
+                }else if(input==='uttar pradesh'){
+                    document.getElementById("output").textContent="Score 6";
+                }else if(input==='puducherry'){
+                    document.getElementById("output").textContent="Score 11";
+                }else if(input==='andhra pradesh'){
+                    document.getElementById("output").textContent="Score 18";
+                }else if(input==='jammu and kashmir'){
+                    document.getElementById("output").textContent="Score 0";
+                }else if(input==='telangana'){
+                    document.getElementById("output").textContent="Score 19";
+                }else if(input==='west-bengal'){
+                    document.getElementById("output").textContent="Score 20";
+                }else if(input==='tamil-nadu'){
+                    document.getElementById("output").textContent="Score 23";
+                }else{
+                    document.getElementById("output").textContent="Score 0";
+                }
+
+                eve.preventDefault();
+            })
+            function myfun1(event){
+
+                event.preventDefault();
+
+                let input=document.getElementById("userinput").value;
+                if(input==="lakshadweep"){
+                    document.getElementById("output").textContent="Score 92";
+                }else if(input==="delhi"){
+                    document.getElementById("output").textContent="Score 13";
+                }else if(input==='arunachal'){
+                    document.getElementById("output").textContent="Score 79";
+                }else if(input==='mizoram'){
+                    document.getElementById("output").textContent="Score 84";
+                }else if(input==='andaman and nicobar'){
+                    document.getElementById("output").textContent="Score 82";
+                }else if(input==='meghalaya'){
+                    document.getElementById("output").textContent="Score 76";
+                }else if(input==='assam'){
+                    document.getElementById("output").textContent="Score 36";
+                }else if(input==='manipur'){
+                    document.getElementById("output").textContent="Score 74";
+                }else if(input==='nagaland'){
+                    document.getElementById("output").textContent="Score 73.9";
+                }else if(input==='tripura'){
+                    document.getElementById("output").textContent="Score 73.6";
+                }else if(input==='goa'){
+                    document.getElementById("output").textContent="Score 60";
+                }else if(input==='kerala'){
+                    document.getElementById("output").textContent="Score 55";
+                }else if(input==='sikkim'){
+                    document.getElementById("output").textContent="Score 47";
+                }else if(input==='bihar'){
+                    document.getElementById("output").textContent="Score 8";
+                }else if(input==='chattisgarh'){
+                    document.getElementById("output").textContent="Score 41";
+                }else if(input==='delhi'){
+                    document.getElementById("output").textContent="Score 13";
+                }else if(input==='gujarat'){
+                    document.getElementById("output").textContent="Score 7";
+                }else if(input==='haryana'){
+                    document.getElementById("output").textContent="Score 4";
+                }else if(input==='himachal pradesh'){
+                    document.getElementById("output").textContent="Score 28";
+                }else if(input==='jharkhand'){
+                    document.getElementById("output").textContent="Score 30";
+                }else if(input==='karnataka'){
+                    document.getElementById("output").textContent="Score 20";
+                }else if(input==='madhya pradesh'){
+                    document.getElementById("output").textContent="Score 25";
+                }else if(input==='maharastra'){
+                    document.getElementById("output").textContent="Score 16";
+                }else if(input==='ladakh'){
+                    document.getElementById("output").textContent="Score 2";
+                }else if(input==='punjab'){
+                    document.getElementById("output").textContent="Score 5";
+                }else if(input==='rajasthan'){
+                    document.getElementById("output").textContent="Score 5";
+                }else if(input==='uttar pradesh'){
+                    document.getElementById("output").textContent="Score 6";
+                }else if(input==='puducherry'){
+                    document.getElementById("output").textContent="Score 11";
+                }else if(input==='andhra pradesh'){
+                    document.getElementById("output").textContent="Score 18";
+                }else if(input==='jammu and kashmir'){
+                    document.getElementById("output").textContent="Score 0";
+                }else if(input==='telangana'){
+                    document.getElementById("output").textContent="Score 19";
+                }else if(input==='west-bengal'){
+                    document.getElementById("output").textContent="Score 20";
+                }else if(input==='tamil-nadu'){
+                    document.getElementById("output").textContent="Score 23";
+                }else{
+                    document.getElementById("output").textContent="Score 0";
+                }
+                 }
+            
+        </script>
+    </body>
+</html>

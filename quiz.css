@@ -1,0 +1,117 @@
+\*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 0.1rem;
+    font-family: 'Nova Square',cursive;
+}
+a:hover{
+    cursor:pointer;
+    box-shadow: o 0.4rem 1.4rem 0 green;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+a[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.container{
+    width: 150vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width:80rem;
+    margin: 0 auto;
+}
+
+h1{
+    font-size:2rem;
+    margin-bottom: 3rem;
+}
+span{
+    /* font-size: 60px;
+    transform: translateY(-20%); */
+    font-size: 20px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 900;
+    border-bottom: -50px;
+  }
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}
+.text-center{
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+.choice-container{
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 70%;
+    border-radius: 4px;
+    font-size: 2rem;
+    min-width: 50rem;
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow:0 0.4rem 1.4rem 0 olive;
+    transform:scale(1.02);
+    transition:transform 100ms;
+}
+.choice-prefix{
+    padding:0.1rem 0.5rem;
+    color: rgb(0, 0, 0);
+}
+.choice-text{
+    padding:0.1rem;
+    width:100%;
+    text-align: center;
+}
+.correct{
+    background:linear-gradient(32deg,rgba(11,223, 36)0%,rgb(41,232,111)100%);
+}
+.incorrect{
+    background:linear-gradient(32deg,rgba(230,29,29,1)0%,rgb(224,11,11,1)100%);
+}
+#progressBar{
+    width: 15rem;
+    height: 1.5rem;
+    border: 0.2rem solid rgb(28, 150, 53);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+#progressBarfull{
+    height: 100%;
+    background: rgb(13, 205, 20);
+    width: 0%;
+}
+@media screen and (max-width:768px) {
+    .choice_container{
+        min-width: 40rem;
+    }
+}
+
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text{
+    text-align :center;
+}
